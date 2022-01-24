@@ -37,7 +37,6 @@ const validPos = function (grid, r, c) {
   return validRow && validCol && grid[r][c] !== 'W';
 };
 
-
 let grid = [
   ['W', 'L', 'W', 'W', 'W'],
   ['W', 'L', 'W', 'W', 'W'],
