@@ -22,3 +22,15 @@ const createAdjList = function (edges) {
   };
   return adjList;
 };
+
+// const createAdjList = (edges) => {
+//   const adjList = {};
+//   for (let [a, b] of edges) {
+//     if (a in adjList) {
+//       adjList[a].push(b)
+//     } else {
+//       adjList[a] = []
+//     }
+//   }
+//   return adjList;
+// }
