@@ -21,29 +21,6 @@ In the example above, we would form the following groups: (A, B, D, I, G, K), (C
 
 */
 
-// var countComponents = function (n, edges) {
-//   let count = 0;
-//   const visited = new Set();
-//   const graph = createAdjList(n, edges);
-//   for (let node in graph) {
-//     if (dfs(graph, node, visited) > 0) count++
-//   };
-//   return count;
-// };
-
-// var dfs = function (graph, node, visited) {
-//   if (!node) return 0;
-//   if (visited.has(node)) return 0;
-//   visited.add(node);
-//   let size = 1;
-//   for (let neighbor of graph[node]) {
-//     size += dfs(graph, neighbor, visited);
-//   };
-//   return size;
-// };
-
-
-
 
 const formNearDupsCluster = (images) => {
   const clusters = [];
@@ -79,5 +56,5 @@ const images = {
 }
 
 console.log(formNearDupsCluster(images));
-// output: [[A, B, D, I, G, K], [C, E], [F]]
-// [ [ 'A', 'B', 'D', 'I', 'K' ], [ 'C', 'E' ], [ 'F' ], [ 'G' ] ]
+// expected output: [[A, B, D, I, G, K], [C, E], [F]]
+// actual output: [ [ 'A', 'B', 'D', 'I', 'K' ], [ 'C', 'E' ], [ 'F' ], [ 'G' ] ]
