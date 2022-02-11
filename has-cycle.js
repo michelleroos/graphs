@@ -1,5 +1,6 @@
 /*
 has cycle (in directed graph)
+>>> Same as prereqs-possible
 Write a function, hasCycle, that takes in an object representing the adjacency list of a directed graph. The function should return a boolean indicating whether or not the graph contains a cycle.
 */
 
