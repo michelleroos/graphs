@@ -14,6 +14,7 @@ const createAdjList = (prereqs, numCourses) => {
   let i = 0;
   while (i < numCourses.length) {
     if (!i in adjList) adjList[i] = [];
+    i++;
   }
   return adjList;
 }
